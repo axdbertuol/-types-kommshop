@@ -2,8 +2,7 @@
   "name": "@types/kommshop",
   "version": "1.0.0",
   "description": "A private kommshop type package",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "index.d.ts",
   "scripts": {
     "build": "tsc"
   },
@@ -13,5 +12,11 @@
   },
   "devDependencies": {
     "typescript": "5.2.2"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts"
+    },
+    "./package.json": "./package.json"
   }
 }
