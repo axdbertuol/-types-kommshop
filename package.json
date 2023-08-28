@@ -1,5 +1,5 @@
 {
-  "name": "@types/kommshop",
+  "name": "kommshop-types",
   "version": "1.0.0",
   "description": "A private kommshop type package",
   "types": "index.d.ts",
