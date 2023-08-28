@@ -8,7 +8,9 @@
     "build": "tsc"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "mongoose": "^7.4.5"
+  },
   "devDependencies": {
     "typescript": "5.2.2"
   }
