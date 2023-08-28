@@ -1,4 +1,5 @@
 import { ObjectId } from "mongoose";
+import { Content } from "./index";
 
 declare namespace Entity {
   export interface Product {
