@@ -11,6 +11,7 @@ declare namespace Entity {
     description?: string;
     price: number;
     category: Category;
+    favouritedBy?: ObjectId[];
   }
   export interface Category {
     _id: ObjectId;
