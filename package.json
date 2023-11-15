@@ -24,9 +24,6 @@
     "url": "https://github.com/axdbertuol/-types-kommshop"
   },
   "exports": {
-    ".": [
-      "./src/index.ts",
-      "./src/enum.ts"
-    ]
+    ".": "./src/index.ts"
   }
 }
