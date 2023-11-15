@@ -1,17 +1,26 @@
 {
-  "name": "@types/kommshop",
-  "version": "1.0.0",
+  "name": "kommshop-types",
+  "version": "0.22.4",
   "description": "A private kommshop type package",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
-  "private": true,
+  "keywords": [
+    "typescript",
+    "kommshop",
+    "shared"
+  ],
   "dependencies": {
-    "mongoose": "^7.4.5"
+    "mongoose": "^7.5.3",
+    "typeorm": "^0.3.17"
   },
   "devDependencies": {
     "typescript": "5.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/axdbertuol/-types-kommshop"
   }
 }
