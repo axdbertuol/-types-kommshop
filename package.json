@@ -25,7 +25,8 @@
   },
   "exports": {
     ".": [
-      "./src/*.ts"
+      "./src/index.ts",
+      "./src/enum.ts"
     ]
   }
 }
