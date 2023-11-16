@@ -4,7 +4,6 @@
   "description": "A private kommshop type package",
   "main": "./index.js",
   "types": "./index.d.ts",
-  "type": "module",
   "scripts": {
     "build": "tsc"
   },
