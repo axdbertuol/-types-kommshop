@@ -89,7 +89,7 @@ export type CreateUserDto = {
   hash?: string | null;
 };
 
-export type User = IEntityHelper & {
+export type User = {
   id: number;
 
   email: string | null;
@@ -128,19 +128,19 @@ export type FilterUserDto = {
   roles?: Role[] | null;
 };
 
-export type SortUserDto = {
-  orderBy: keyof User;
+export type SortDto<T> = {
+  orderBy: keyof T;
   order: string;
 };
 
-export type QueryUserDto = {
+export type QueryDto<F, S> = {
   page?: number;
   limit?: number;
-  filters?: FilterUserDto | null;
-  sort?: SortUserDto[] | null;
+  filters?: F | null;
+  sort?: S[] | null;
 };
 
-export type Forgot = IEntityHelper & {
+export type Forgot = {
   id: number;
 
   hash: string;
@@ -165,7 +165,7 @@ export type UpdateUserDto = Partial<{
   hash: string | null;
 }>;
 
-export type Session = IEntityHelper & {
+export type Session = {
   id: number;
 
   user: User;
@@ -182,17 +182,17 @@ export type Social = {
   email?: string;
 };
 
-export type FileEntity = IEntityHelper & {
+export type FileEntity = {
   id: string;
 
   path: string;
 };
-export type Status = IEntityHelper & {
+export type Status = {
   id: number;
 
   name?: string;
 };
-export type Role = IEntityHelper & {
+export type Role = {
   id: number;
 
   name?: string;
