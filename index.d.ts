@@ -1,6 +1,5 @@
 import { ObjectId } from "mongoose";
 import { FindOptionsWhere } from "typeorm";
-import { IEntityHelper } from "./utils/entity-helper";
 
 export type AuthConfirmEmailDto = {
   hash: string;
@@ -34,6 +33,14 @@ export type AuthUpdateDto = {
   password?: string;
   oldPassword: string;
 };
+
+export interface IEntityHelper {
+  __entity?: string;
+
+  setEntityName(): void;
+
+  toJSON(): Record<string, any>;
+}
 
 export type JwtPayloadType = Pick<User, "id" | "role"> & {
   sessionId: Session["id"];
@@ -232,5 +239,3 @@ export interface IPaginationOptions {
 }
 
 export * from "./enum";
-
-export type { IEntityHelper };

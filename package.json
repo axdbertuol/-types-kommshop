@@ -6,6 +6,7 @@
   "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
+    "preinstall": "npm run build",
     "build": "tsc"
   },
   "keywords": [
@@ -25,6 +26,9 @@
     "url": "https://github.com/axdbertuol/-types-kommshop"
   },
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "types": "./index.d.ts"
+    },
+    "./package.json": "./package.json"
   }
 }
