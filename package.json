@@ -24,10 +24,5 @@
     "type": "git",
     "url": "https://github.com/axdbertuol/-types-kommshop"
   },
-  "exports": {
-    ".": {
-      "types": "./index.d.ts"
-    },
-    "./package.json": "./package.json"
-  }
+  "exports": "./index.js"
 }
