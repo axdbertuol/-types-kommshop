@@ -188,3 +188,54 @@ export declare enum StatusEnum {
     "active" = 1,
     "inactive" = 2
 }
+export type CreateCategoryDto = {
+    name: string;
+};
+export type CreatedCategoryDto = CreateCategoryDto | {
+    _id: string;
+};
+export type CreateProductDto = {
+    name: string;
+    description?: string;
+    price: number;
+    category: string;
+};
+export type CreatedProductDto = {
+    _id: string;
+    name: string;
+    description?: string;
+    price: number;
+    category: Category;
+};
+export type FavouriteProductDto = {
+    productId: string;
+    userId: ObjectId;
+};
+export type FindCategoryDto = {
+    name: string;
+    id: string;
+};
+export type FindProductDto = {
+    id?: string;
+    name?: string;
+    description?: string;
+    price?: number;
+    category?: Category;
+    favouritedBy?: ObjectId[];
+};
+export type UpdateCategoryDto = {
+    name?: string;
+};
+export type UpdatedCategoryDto = UpdateCategoryDto | {
+    _id: string;
+};
+export type UpdateProductDto = {
+    name?: string;
+    description?: string;
+    price?: number;
+    category?: Category;
+    favouritedBy?: ObjectId[] | ObjectId;
+};
+export type UpdatedProductDto = UpdateProductDto | {
+    _id: ObjectId;
+};
