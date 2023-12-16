@@ -25,7 +25,7 @@ export type AuthUpdateDto = {
     firstName?: string;
     lastName?: string;
     password?: string;
-    oldPassword: string;
+    oldPassword?: string;
 };
 export interface IEntityHelper {
     __entity?: string;
@@ -78,7 +78,6 @@ export type User = {
     photo?: FileEntity | null;
     role?: Role | null;
     status?: Status;
-    hash: string | null;
     createdAt: Date;
     updatedAt: Date;
     deletedAt: Date;
